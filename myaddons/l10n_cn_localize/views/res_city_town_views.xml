@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_city_town_tree_l10n_cn" model="ir.ui.view">
+            <field name="name">res.city.town.l10n_cn.tree</field>
+            <field name="model">l10n_cn.res.city.town</field>
+            <field name="arch" type="xml">
+                <tree string="Town/Street" editable="top">
+                    <field name="name"/>
+                    <field name="adcode"/>
+                    <field name="city_id" context="{
+                        'active_model': 'l10n_cn.res.city.town',
+                        'form_view_ref': 'l10n_cn_localize.view_city_form_l10n_cn'}"/>
+                    <field name="district_id" context="{'default_city_id': city_id}"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_city_town_form_l10n_cn" model="ir.ui.view">
+            <field name="name">res.city.town.l10n_cn.form</field>
+            <field name="model">l10n_cn.res.city.town</field>
+            <field name="arch" type="xml">
+                <form string="Town/Street">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="adcode"/>
+                            </group>
+                            <group>
+                                <field name="city_id" context="{'form_view_ref': 'l10n_cn_localize.view_city_form_l10n_cn'}"/>
+                                <field name="district_id" context="{'default_city_id': city_id}"/>
+                                <field name="active" widget="boolean_toggle"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_city_town_search_l10n_cn" model="ir.ui.view">
+            <field name="name">res.city.town.l10n_cn.search</field>
+            <field name="model">l10n_cn.res.city.town</field>
+            <field name="arch" type="xml">
+                <search string="Town/Street">
+                    <field name="name" filter_domain="['|', ('name','ilike',self), ('adcode','ilike',self)]"/>
+                    <field name="city_id"/>
+                    <field name="district_id"/>
+                    <filter name="archive" string="Archive" domain="[('active','=',False)]" help="Show archive towns"/>
+                    <group string="Group By">
+                        <filter name="groupby_district_id" string="District/County" context="{'group_by': 'district_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_city_town_l10n_cn" model="ir.actions.act_window">
+            <field name="name">Town/Street</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">l10n_cn.res.city.town</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_city_town_tree_l10n_cn"/>
+        </record>
+
+        <menuitem id="menu_city_town_l10n_cn" name="Town/Street" action="action_city_town_l10n_cn" parent="menu_localisation_l10n_cn" sequence="30"/>
+
+    </data>
+</odoo>
