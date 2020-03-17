@@ -1,0 +1,1 @@
+E:\Python\Python37\python.exe C:\downloads\lhslll\odoo\odoo-bin -c C:\downloads\lhslll\odoo\odoo-m.conf
