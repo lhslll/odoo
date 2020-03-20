@@ -1,0 +1,1 @@
+sc create LCZerp binPath="python \"C:\\downloads\\lhslll\\odoo\\odoo-bin\" -c \"C:\\downloads\\lhslll\\odoo\\odoo-m.conf\""
