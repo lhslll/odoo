@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 确保省市区联动逻辑在其他国家和地区中正常同步地址字段 -->
+
+    <record id="view_partner_tree_inherit_l10n_cn" model="ir.ui.view">
+        <field name="name">res.partner.tree.inherit.l10n_cn</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city']" position="before">
+                <field name="l10n_cn_town_id" optional="hide"/>
+                <field name="l10n_cn_district_id" optional="hide"/>
+                <field name="city_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_form_inherit_l10n_cn" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.l10n_cn</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city']" position="after">
+                <field name="l10n_cn_town_id" invisible="1"/>
+                <field name="l10n_cn_district_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_address_form_inherit_l10n_cn" model="ir.ui.view">
+        <field name="name">res.partner.form.address.inherit.l10n_cn</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_address_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city']" position="after">
+                <field name="l10n_cn_town_id" invisible="1"/>
+                <field name="l10n_cn_district_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_short_form_inherit_l10n_cn" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.l10n_cn</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_short_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city']" position="after">
+                <field name="l10n_cn_town_id" invisible="1"/>
+                <field name="l10n_cn_district_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_view_form_private_inherit_l10n_cn" model="ir.ui.view">
+        <field name="name">res.partner.view.form.private.inherit.l10n_cn</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_view_form_private"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city']" position="after">
+                <field name="l10n_cn_town_id" invisible="1"/>
+                <field name="l10n_cn_district_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
