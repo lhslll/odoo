@@ -16,9 +16,6 @@
                         <label for="app_system_name"/>
                         <div>
                             <field name="app_system_name"/>
-                            <div>
-                                <a href="https://www.sunpop.cn" target="_blank">Visit our website for more apps and Support. https://www.sunpop.cn</a>
-                            </div>
                         </div>
                     </group>
                     <group string="User Menu">
@@ -184,7 +181,7 @@
 
         <menuitem
                 id="menu_app_group"
-                name="odooApp"
+                name="定制工具"
                 parent="base.menu_administration"
                 sequence="1"
                 groups="base.group_system"/>
