@@ -485,7 +485,7 @@ msgstr "点击这里 <b>添加你的商机</b>."
 msgid ""
 "Click here to <b>create your first opportunity</b> and add it to your "
 "pipeline."
-msgstr "点击这里<b>创建您的第一条商机</b>， 并且加入到您的商机漏斗."
+msgstr "点击这里<b>创建您的第一条商机</b>， 并且加入到您的商机pipeline."
 
 #. module: crm
 #. openerp-web
@@ -718,7 +718,7 @@ msgstr "创建一个新的商机关联到此客户"
 #: code:addons/crm/models/crm_lead.py:0
 #, python-format
 msgid "Create an opportunity in your pipeline"
-msgstr "在您的漏斗中创造商机"
+msgstr "在您的pipeline中创造商机"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -779,7 +779,7 @@ msgstr "创建日期"
 #. module: crm
 #: model:ir.actions.server,name:crm.action_your_pipeline
 msgid "Crm: My Pipeline"
-msgstr "Crm：我的漏斗"
+msgstr "Crm：我的pipeline"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__company_currency
@@ -929,7 +929,7 @@ msgstr "邮件抄送"
 msgid ""
 "Email sent to <strong>${email}</strong> generate opportunities in your "
 "pipeline.<br>"
-msgstr "发送到 <strong>${email}</strong>  该邮箱的邮件会在您的漏斗里自动生成商机.<br>"
+msgstr "发送到 <strong>${email}</strong>  该邮箱的邮件会在您的pipeline里自动生成商机.<br>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -1034,7 +1034,7 @@ msgstr "用来计算概率的字段："
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_stage__fold
 msgid "Folded in Pipeline"
-msgstr "在漏斗中折叠"
+msgstr "在pipeline中折叠"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -1689,7 +1689,7 @@ msgstr "我的商机"
 #: model:ir.ui.menu,name:crm.menu_crm_opportunities
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "My Pipeline"
-msgstr "我的漏斗"
+msgstr "我的pipeline"
 
 #. module: crm
 #: model:crm.stage,name:crm.stage_lead1
@@ -1813,7 +1813,7 @@ msgstr "未读消息数量"
 msgid ""
 "Odoo helps you keep track of your sales pipeline to follow\n"
 "                    up potential sales and better forecast your future revenues."
-msgstr "Odoo帮助您追踪销售漏斗，关注潜在销售机会并更好的预测未来收入。"
+msgstr "Odoo帮助您追踪销售pipeline，关注潜在销售机会并更好的预测未来收入。"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_salesteams_view_kanban
@@ -1865,7 +1865,7 @@ msgid ""
 "mainly used by the sales manager in order to do the periodic review with the"
 " channels of the sales pipeline."
 msgstr ""
-"商机分析让您立即有机会获取预计收入、计划成本、错过的期限或每次机会的交流次数等信息。此报告主要由销售经理使用，以便对销售漏斗的渠道进行周期性评估。"
+"商机分析让您立即有机会获取预计收入、计划成本、错过的期限或每次机会的交流次数等信息。此报告主要由销售经理使用，以便对销售pipeline的渠道进行周期性评估。"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team__opportunities_amount
@@ -2023,7 +2023,7 @@ msgstr "电话质量"
 #: model:ir.ui.menu,name:crm.menu_crm_config_lead
 #, python-format
 msgid "Pipeline"
-msgstr "漏斗"
+msgstr "Pipeline"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.crm_activity_report_action
@@ -2038,7 +2038,7 @@ msgstr "管道活动"
 #: model_terms:ir.ui.view,arch_db:crm.crm_opportunity_report_view_graph
 #: model_terms:ir.ui.view,arch_db:crm.crm_opportunity_report_view_pivot
 msgid "Pipeline Analysis"
-msgstr "漏斗分析"
+msgstr "Pipeline分析"
 
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_opportunity_report_action
@@ -2104,7 +2104,7 @@ msgstr "验证"
 msgid ""
 "Ready to boost your sales? Your <b>Pipeline</b> can be found here, under the"
 " <b>CRM</b> app."
-msgstr "准备好提升您的销售业绩了吗? 您 可以在 <b>CRM</b> 应用找到您的<b>销售漏斗</b>"
+msgstr "准备好提升您的销售业绩了吗? 您 可以在 <b>CRM</b> 应用找到您的<b>销售pipeline</b>"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__referred
@@ -2235,7 +2235,7 @@ msgstr "服务"
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_stage_action
 msgid "Set a new stage in your opportunity pipeline"
-msgstr "在你的商机漏斗中设置一个新的节点"
+msgstr "在你的商机pipeline中设置一个新的节点"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.crm_config_settings_action
@@ -2415,7 +2415,7 @@ msgstr "标签"
 #. module: crm
 #: model:ir.ui.menu,name:crm.sales_team_menu_team_pipeline
 msgid "Team Pipelines"
-msgstr "团队漏斗"
+msgstr "团队pipelines"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_id
@@ -2638,14 +2638,14 @@ msgstr "用丢失理由去解释为什么一个机会会失去."
 msgid ""
 "Use opportunities to keep track of your sales pipeline, follow\n"
 "                up potential sales and better forecast your future revenues."
-msgstr "用商机来跟踪销售漏斗，跟进潜在的销售，并且更好的预测未来收入。"
+msgstr "用商机来跟踪销售pipeline，跟进潜在的销售，并且更好的预测未来收入。"
 
 #. module: crm
 #. openerp-web
 #: code:addons/crm/static/src/js/tours/crm.js:0
 #, python-format
 msgid "Use the breadcrumbs to <b>go back to your sales pipeline</b>."
-msgstr "使用面包屑导航 <b>返回您的销售漏斗</b>."
+msgstr "使用面包屑导航 <b>返回您的销售pipeline</b>."
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_lead__user_login
