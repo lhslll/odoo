@@ -1149,7 +1149,8 @@ def resetlocale():
     # locale.resetlocale is bugged with some locales.
     for ln in get_locales():
         try:
-            ln = ln[0:ln.index('.')]
+			# uncomment for win platform pycharm debug
+            # ln = ln[0:ln.index('.')]
             return locale.setlocale(locale.LC_ALL, ln)
         except locale.Error:
             continue
