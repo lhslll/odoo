@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="app_view_partner_property_form" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="priority" eval="1"/>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='sale']/field[1]" position="before">
+                    <field name="customer_rank" invisible="1"/>
+                    <field name="supplier_rank" invisible="1"/>
+                    <field name="customer"/>
+                    <field name="customer_rank_priority" widget="priority" attrs="{'invisible': [('customer', '!=', True)]}"/>
+                </xpath>
+                <xpath expr="//group[@name='purchase']/field[1]" position="before">
+                    <field name="supplier"/>
+                    <field name="supplier_rank_priority" widget="priority" attrs="{'invisible': [('supplier', '!=', True)]}"/>
+                </xpath>
+            </field>
+        </record>
+        <!--只显示客户，供应商的替代-->
+
+
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!--系统设置默认值，每次更新模块时要更新-->
+        <!--设置 销售只显示客户，采购只显示供应商-->
+        <record id="group_sale_partner_only_customer" model="res.groups">
+            <field name="name">Show only customer in Sale</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <record id="group_purchase_partner_only_supplier" model="res.groups">
+            <field name="name">Show only supplier in Purchase</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+
+        <record id="base.group_user" model="res.groups">
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('app_base.group_sale_partner_only_customer')),
+                   (4, ref('app_base.group_purchase_partner_only_supplier')),
+                   ]"/>
+        </record>
+
+    </data>
+</odoo>
