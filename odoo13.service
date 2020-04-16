@@ -1,0 +1,15 @@
+[Unit]
+Description=Odoo Service
+After=network.target
+
+[Service]
+Type=simple
+SyslogIdentifier=odoo
+PermissionsStartOnly=true
+User=husheng
+Group=husheng
+ExecStart=/home/husheng/.pyenv/shims/python /home/husheng/erp/odoo/odoo-bin -c /home/husheng/erp/odoo/odoo-m.conf
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
