@@ -1,0 +1,8 @@
+/home/ubuntu/erp/odoo-data/LCZERP-UB/log/server.log{
+daily
+rotate 60
+nocompress
+dateext
+
+
+}
